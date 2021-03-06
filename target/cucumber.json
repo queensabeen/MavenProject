@@ -1,874 +1,157 @@
 [
   {
-    "line": 3,
+    "line": 2,
     "elements": [
       {
-        "line": 6,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
+        "start_timestamp": "2021-03-06T18:31:36.572Z",
+        "before": [
           {
             "result": {
-              "duration": 5149000000,
+              "duration": 12363000000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "a JWT is generated",
             "match": {
-              "location": "com.hrms.api.generateTokenSteps.a_JWT_is_generated()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-03-06T17:47:57.086Z",
-        "line": 9,
-        "name": "Creating an Employee",
-        "description": "",
-        "id": "syntax-hrms-api-workflow;creating-an-employee",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 74000000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "a request is prepared to create an employee",
-            "match": {
-              "location": "com.hrms.api.apiTestingFinalSteps.a_request_is_prepared_to_create_an_employee()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 214000000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "a POST call is made to create an employee",
-            "match": {
-              "location": "com.hrms.api.apiTestingFinalSteps.a_POST_call_is_made_to_create_an_employee()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c201\u003e but was \u003c400\u003e.\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)\r\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)\r\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)\r\n\tat com.hrms.api.apiTestingFinalSteps.the_status_code_for_creating_an_employee_is(apiTestingFinalSteps.java:84)\r\n\tat ✽.the status code for creating an employee is 201(file:///C:/Users/FS/eclipse-workspace/CucumberFramework/src/test/resources/features/apiWorkflow.feature:12)\r\n",
-              "duration": 591000000,
-              "status": "failed"
-            },
-            "line": 12,
-            "name": "the status code for creating an employee is 201",
-            "match": {
-              "arguments": [
-                {
-                  "val": "201",
-                  "offset": 44
-                }
-              ],
-              "location": "com.hrms.api.apiTestingFinalSteps.the_status_code_for_creating_an_employee_is(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 7000000,
-              "status": "skipped"
-            },
-            "line": 13,
-            "name": "the employee is created contains key \"Message\" and value \"Entry Created\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Message\"",
-                  "offset": 37
-                },
-                {
-                  "val": "\"Entry Created\"",
-                  "offset": 57
-                }
-              ],
-              "location": "com.hrms.api.apiTestingFinalSteps.theEmployeeIsCreatedContainsKeyAndValue(java.lang.String,java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5000000,
-              "status": "skipped"
-            },
-            "line": 14,
-            "name": "the employeeID \"Employee[0].employee_id\" is stored in the global variable to be used for other calls",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Employee[0].employee_id\"",
-                  "offset": 15
-                }
-              ],
-              "location": "com.hrms.api.apiTestingFinalSteps.theEmployeeIDIsStoredInTheGlobalVariableToBeUsedForOtherCalls(java.lang.String)"
-            },
-            "keyword": "And "
+              "location": "com.hrms.stepDefinitions.Hooks.startTest()"
+            }
           }
         ],
-        "tags": [
-          {
-            "name": "@apiWorkflow"
-          }
-        ]
-      },
-      {
-        "line": 6,
-        "name": "",
+        "line": 5,
+        "name": "Login with valid credentials",
         "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
+        "id": "login-functionality;login-with-valid-credentials",
+        "after": [
           {
+            "embeddings": [
+              {
+                "data": "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VqxYsWLFihVPSZwhZmz2u5v9KFasWLFixYoVK1aseEbGmUtAgHj2o1ixYsWKFStWrFix4hkZZ0h/D4gBholixYoVK1asWLFixYpnaJy5BMQgnv0oVqxYsWLFihUrVqx4ZsYZ0p+A9Gc/ihUrVqxYsWLFihUrnplxZhMQLVq0aNGiRYsWLVq0zOglYwmIaZ7dqWLFihUrVqxYsWLFimdmnLEEBCNhp4oVK1asWLFixYoVK56ZcWac/SV0w0SxYsWKFStWrFixYsUzNM5YApIV2ZZixYoVK1asWLFixYqnNs6M/jkg/dmPYsWKFStWrFixYsWKZ2acsQTEgLPZj2LFihUrVqxYsWLFimdknCHmlGdaihUrVqxYsWLFihUrnvo4QwzHcZyM7U1ERERERLJSZ2cnAHV1dZOy/dWrVwOQuVRHRERERERmPCUgIiIiIiKSMUpAREREREQkY5SAiIiIiIhIxigBERERERGRjFECIiIiIiIiGaMEREREREREMkYJiIiIiIiIZIwSEBERERERyRglICIiIiIikjFKQEREREREJGOUgIiIiIiISMYoARERERERkYxRAiIiIiIiIhnjnYyNdnR00NnZSTQanYzNi4iIiIjIBJs9e3ZG9jPhCUhHRwfd3d2UlJTg9U5KfiMiIiIiIhPMtu2M7GfCM4TOzk5KS0uVfIiIiIiITCPTNgGJRqN4PB4cx5noTYuIiIiIyDSnSegiIiIiIpIxSkBERERERCRjJmWihoZfiYiIiIjIUNQDIiIiIiIiGaMeEBERERERyRj1gIiIiIiISMYoARERERERkYzRECwREREREckY9YCIiIiIiEjGZGUPyIsvvsjOnTsHPV5SUsJFF13EBz/4Qaqqqsa1j+E8/vjjAHzuc5+bkPWm2nQpp4iIiIhMHcMwMrKfSUlAJsott9yS9P+2tjb27dvHK6+8wp133snKlSunqGQiIiIiIjIWWZ2AXHvttYMe27hxI9/61rf44Q9/yNe//nUCgcAUlExERERERMYiK4dgDbcdv9/PHXfcwTe/+U327t3LzTffHH/uf/7nfzh06BBvv/02AAsXLmTt2rVcc8018XXa29vZvXs3r7/+Ol1dXUOu43r11VfZu3cvJ0+eHHa9F198keeff56uri6WL1/ODTfcQHV1ddI6x48f55e//GW8bGvXruUDH/jAoKFk6RzDE088wfLlyzl58iSvvPIKCxcuZPPmzQQCAd58802eeeYZTp48yfLly9m0adOw76eIiIiICGgI1rCqqqooKSnhr3/9a/yx5557jl27dnHLLbfwsY99jFAoxJ///Gd27txJfn4+V1xxBQA/+tGPAPinf/on/H4/9fX17Ny5k76+Pj784Q/Ht3fo0CGampq48cYbKS0t5Q9/+AM7d+6krKwsaejXoUOHOHr0KJs2baK0tJTf/va3fO973+Oee+6JJyGvvfYajz/+OGvXruWGG24A4KWXXuKb3/xm0nrpHgPA888/z0UXXcS///u/09HRQSAQSNrPHXfcQUdHB0899RSFhYUUFRVNUm2IiIiIiKRv2t4Fa9myZZw8eTL+/7q6OtatW8c111xDVVUV1dXV3HHHHQC8/vrrAJw5c4a3336ba6+9lurqaqqqqrjmmmtYu3YtJ06cGLSPzZs3s3LlSqqqqrjjjjsoKSlh3759g9b74he/GF/vs5/9LAsXLuSZZ56JP19TU8OqVau44447qK6uprq6esj10jkGV1dXFx//+MepqqqKJ0SJ+3Efv+OOO+K9KSIiIiIiUy0rh2C5r09nO+46991335CvWbVqVfzxWbNmAbEhU47jUF1dTX5+Prfffvug1y5fvpzS0tKkx5YtWzbkenPnzk167Morr+SZZ56hra2Njo4Ourq6uOyyywaV7dprr+WnP/0p9fX1VFVVpXUMifv1+/3xx44fPz7kfhYvXsyCBQuG3K6IiIiISKZNyyFYqbS3t9PY2MipU6doa2vjvffe4+2334434PPz8/nsZz/Lz372M5544gkg1pB///vfz6pVq8jPz49vK90hS0Ot5zb4Ozo6OH36NAClpaWD1ps/f/6ojyHVfjs6OlLuZ+7cuWkdi4iIiIjIZJu2CcjRo0dZvnx5/P+vvfZaUlIxZ84c3v/+9w963cqVK6murubNN9/k6NGj7N+/n5/+9Kf86U9/4l/+5V8yVv6hpHsMIiIiIiLTVVYOwRppO+5wo6uvvhrHcThz5gxPPPEEV155JTfffHNST8avf/1rli5dmrQtv9/PxRdfzMUXX8zHPvYxnn/+eZ599tn4UKhUQ8AGPp5qvVOnTgEwa9as+HPt7e0sXrw4aT23d8RxHE6fPp32MQy1X3d42VD7aWxspKKiQkOwRERERGTKTbtJ6H19ffz6178GiPcO9PX1AbBmzZqkhrubqCT+/8tf/jJvvvlm0jaHGgqVrtdee4329vak8r3yyiusXLmSQCAQv2PX/v37B7127969lJSUUFVVlfYxpFJVVcWCBQsG7ef48ePxhEhEREREZKpl9RCs3/3ud0n/b2trY//+/XR1dfGZz3wm/iOE7ryH559/Hoj1cBw/fpza2lpKSkrir583bx4AP/7xj7ntttsoLS2lo6ODp59+muXLlw/6TY50PfbYY3z84x+Pl+HUqVP88z//c/z52267jSeffJInn3ySq666CoCXX36ZU6dOsWXLllEdw3A+/vGPs23bNrZv387atWvjxyYiIiIiki2ycgiW+/rEW9QClJSUsGLFCtauXcvixYvj65WWlrJlyxaef/55tm3bBsTuRPW5z32Ov/71r+zevZu+vj78fj/33HMPe/fu5emnn6arq4uSkhIuvfRSbrjhhpRDroY7vpUrV3Luuefy4x//mK6uLlauXMnWrVuT7ox18cUXD1m+f/3Xf40fx2iOIVX5zjvvvPg2vvWtb1FSUsL111/PO++8M+zxiIiIiIhkiuFMcKv02LFj8fkIIiIiIiIyPfh8PiD223STYfXq1cA0nAMiIiIiIiLTlxIQERERERHJGCUgIiIiIiKSMVk5CV1ERERERHKTekBERERERCRjlICIiIiIiEjGKAEREREREZGMUQIiIiIiIiIZowREREREREQyRgmIiIiIiIhkjBIQERERERHJGCUgIiIiIiKSMRP+Q4T5+fl0dXVN9GZFRERERGQSzZ49OyP7mfAEpK+vjwXz50/0ZkVEREREZBKFI5GM7EdDsEREREREJGOUgIiIiIiISMYoARERERERkYxRAiIiIiIiIhmjBERERERERDJGCYiIiIiIiGSMEhAREREREckYJSAiIiIiIpIxSkBERERERCRjlICIiIiIiEjGKAEREREREZGMUQIiIiIiIiIZowREREREREQyRgmIiIiIiIhkjBIQERERERHJGCUgIiIiIiKSMUpAREREREQkY5SAiIiIiIhIxigBERERERGRjFECIiIiIiIiGeOd6gJMhs/fdVfS/9esXs3mzZtHtY09L7xATU0NmzZtYv26dWnv8wePPTbiusfq63nooYfGVK5MGs0xiYiIiIikI6d6QI7V1w9KPgAO1NUN+fhw1q9bxw8e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Ptq6HU85REREZOymfQLiDr9yh125Lr74YuBsI/WZnTvZuHFjvJfk+9u2xXs77r33Xh568MH4MIxPf+YzPPXkk6xYsWLQ/tyGyo033URBYWF8rPp4rnC78wYSl+3bt1NRUcH+ffviQ07ccl133XWsWLEi3hgrKCzkxIkTgyZfuw1BIOkKvzsp2h0i474XU9XwWlxVNeTdo9wr5u48jy9s2cK9996b8WPfev/9g+pn4NCqiooK3j1+PGl4EJxNRNwyTKe7YI1Hqrpzn0v1WRzJvffeyxe2bIl/VhP3NVLdunOD3PobTzlERERk7AzHcZyJ3OCxY8dY0D9BdTwi29YB4Nvywri3NZn27t3LjTfdxLO7dmXlECYRyZzp8r0lIiIylHAkAkBdXd2kbH/16tVADvSAZNrA3/04dOgQMLgHRkREREREBlMCMkruMBJ3mMfW++/n2V27NG5cRERERCQN3qkuwHSU6jdCRERERERkeOoBERERERGRjFECIiIiIiIiGaMEREREREREMkYJiIiIiIiIZIwSEBERERERyRglICIiIiIikjFKQEREREREJGOUgIiIiIiISMYoARERERERkYxRAiIiIiIiIhmjBERERERERDJGCYiIiIiIiGSMd6oLMJLItnVTXQQREREREZkg6gEREREREZGMydoeEN+WF6a6CCIiIiIiMsHUAyIiIiIiIhmjBERERERERDJGCYiIiIiIiGSMEhAREREREckYJSAiIiIiIpIxSkBERERERCRjlICIiIiIiEjGKAEREREREZGMUQIiIiIiIiIZowREREREREQyRgmIiIiIiIhkjBIQERERERHJGCUgIiIiIiKSMUpAREREREQkY5SAiIiIiIhIxigBERERERGRjFECIiIiIiIiGaMEREREREREMkYJiIiIiIiIZIwSEBERERERyRglICIiIiIikjFKQEREREREJGOUgIiIiIiISMYoARERERERkYxRAiIiIiIiIhmjBERERERERDLGO9UFmEifv+uulM9t2rSJ9evWTcp+H330UQ7U1bF161aWLlkyKfsYj1Tvy913383qSy6J/3+0x9HW3s53vvMdvvLAA2nt/wePPcax+noeeugh1qxezebNm0dxFIN99Wtf44tf/CJlgQB7XniBmpqaSa3nydpHW3s79913X/z/lZWVI76nmSjXQEOdH4l1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0ggQAAAgjQABAADSCBAAACCNAAEAANIIEAAAII0AAQAA0ggQAAAgjQABAADSCBAAACCNAAEAANIIEAAAII0AAQAA0ggQAAAgjQABAADSCBAAACCNAAEAANIIEAAAII0AAQAA0ggQAAAgjQABAADSCBAAACCNAAEAANIIEAAAII0AAQAA0ggQAAAgjQABAADSCBAAACCNAAEAANIIEAAAII0AAQAA0ggQAAAgjQABAADSCBAAACCNAAEAANIIEAAAII0AAQAA0ggQAAAgjQABAADSCBAAACCNAAEAANIIEAAAII0AAQAA0ggQAAAgjQABAADSCBAAACCNAAEAANIIEAAAII0AAQAA0ggQAAAgjQABAADSCBAAACCNAAEAANIIEAAAII0AAQAA0ggQAAAgjQDhwPnjHx7EH//woN/DAAA4kAQIB0pzeIgQAIB8AoR97+E3X8fDb77e8ONf3v8ivrz/ReKIAAAOLgHCvvbNN1/HWkSs/eX2j1462fjYj1462RIeIgQAoPee6fcAIFtzhAAAkMsMCPvaCy+82PF24ccvn+p4GwCA3jADwr71m3+7FRERE6+d2/RxRXj8/vdLERHxk5+c7u3AAAAOMDMg7EtFfLTf3kgRH+23AQDoLgECAACkESDsS83LrrZaghVRLLs6FBGHLMECAOghe0DYt4rw+O1v/z0iIs6e/UXHx937z88jImL4b1/JGRgAwAFmBoR9rYiP9tuFIj7abwMA0BsChAPns88+jc8++7TfwwAAOJAECPta87Krs2d/0RIe//HZpy3LrizBAgDoPXtA2Pc22vtREB4AAHnMgHCgvPrq3zdu/13TbQAAcpgB4cB5VXgAAPSNGRAAACCNAAEAANIIEAAAII0AAQAA0ggQAAAgjQABAADSCBAAACCNAAEAANIIEAAAII0AAQAA0ggQAAAgjQABAADSCBAAACCNAAEAANIIEAAAII0AAQAA0ggQAAAgjQABAADSCBAAACCNAAEAANIIEAAAII0AAQAA0ggQAAAgjQABAADSCBAAACCNAAEAANIIEAAAII0AAQAA0ggQAAAgjQABAADSCBAAACCNAAEAANIIEAAAII0AAQAA0jzT7wEAAAB726VLl3b0+OvXr2/4MTMgAADApjYLip0+VoAAAABb2k6EbOcxAgQAANiWzQJju7MkAgQAANi2TqGxkyVaAgQAANiR5uDYSXxEuAoWAADwBHYaHgUzIAAAQBoBAgAApBEgAABAGgECAACkESAAAEAaAQIAAKQRIAAAQBoBAgAApBEgAABAGgECAACkOVSv19f6PQgAAKC/Hj58mHIeMyAAAECaZ7JOdPfu3axTAQDsKyMjI/0eAnSNGRAAACCNAAEAANIIEAAAII0AAQAA0uwqQD766KNujQMAANiFS5cu9XsI2/LEASI+AABgb3kaIuSJAkR8AADA3rTXI2THASI+AABgb9vLEbKjABEfAADwdNirEbLtABEfAADwdNmLEeIyvAAAQJptB8gbb7zRy3EAAABddv369X4PYZ0dzYCIEAAAeDrsxfiIeIIlWCIEAAD2tr0aHxFPuAdEhAAAwN60l+MjYheb0EUIAADsLXs9PiIiDtXr9bWME929ezfjNAAA+87IyEi/h8AB8PDhw5TzuAwvAACQRoAAAABpBAgAAJBGgAAAAGnSNqEDAAB7l03oAADAvvP/g61oLawHv78AAAAASUVORK5CYII\u003d",
+                "mime_type": "image/png",
+                "name": "Login with valid credentials"
+              }
+            ],
             "result": {
-              "duration": 506000000,
+              "duration": 2167000000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "a JWT is generated",
             "match": {
-              "location": "com.hrms.api.generateTokenSteps.a_JWT_is_generated()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-03-06T17:48:04.059Z",
-        "line": 16,
-        "name": "Retrieving the created employee",
-        "description": "",
-        "id": "syntax-hrms-api-workflow;retrieving-the-created-employee",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 80000000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "a request is prepared to retrieve the created employee",
-            "match": {
-              "location": "com.hrms.api.apiTestingFinalSteps.aRequestIsPreparedToRetrieveTheCreatedEmployee()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 403000000,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "a GET call is made to retrieve the created employee",
-            "match": {
-              "location": "com.hrms.api.apiTestingFinalSteps.aGETCallIsMadeToRetrieveTheCreatedEmployee()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c200\u003e but was \u003c400\u003e.\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)\r\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)\r\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)\r\n\tat com.hrms.api.apiTestingFinalSteps.theStatusCodeForRetrievingTheCreatedEmployeeIs(apiTestingFinalSteps.java:118)\r\n\tat ✽.the status code for retrieving the created employee is 200(file:///C:/Users/FS/eclipse-workspace/CucumberFramework/src/test/resources/features/apiWorkflow.feature:19)\r\n",
-              "duration": 6000000,
-              "status": "failed"
-            },
-            "line": 19,
-            "name": "the status code for retrieving the created employee is 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 55
-                }
-              ],
-              "location": "com.hrms.api.apiTestingFinalSteps.theStatusCodeForRetrievingTheCreatedEmployeeIs(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3000000,
-              "status": "skipped"
-            },
-            "line": 20,
-            "name": "the retrieved employeeID \"employee[0].employee_id\" matches the globally stored employeeID",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"employee[0].employee_id\"",
-                  "offset": 25
-                }
-              ],
-              "location": "com.hrms.api.apiTestingFinalSteps.theRetrievedEmployeeIDMatchesTheGloballyStoredEmployeeID(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2000000,
-              "status": "skipped"
-            },
-            "line": 21,
-            "name": "the retrieved data matches the data used to create the employee",
-            "match": {
-              "location": "com.hrms.api.apiTestingFinalSteps.theRetrievedDataMatchesTheDataUsedToCreateTheEmployee()"
-            },
-            "keyword": "And "
+              "location": "com.hrms.stepDefinitions.Hooks.endTest(io.cucumber.java.Scenario)"
+            }
           }
         ],
-        "tags": [
-          {
-            "name": "@apiWorkflow"
-          }
-        ]
-      },
-      {
-        "line": 6,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 324000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "a JWT is generated",
-            "match": {
-              "location": "com.hrms.api.generateTokenSteps.a_JWT_is_generated()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-03-06T17:48:05.228Z",
-        "line": 23,
-        "name": "Update the created Employee",
-        "description": "",
-        "id": "syntax-hrms-api-workflow;update-the-created-employee",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 223000000,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "a request is prepared to update the created employee",
-            "match": {
-              "location": "com.hrms.api.apiTestingFinalSteps.a_request_is_prepared_to_update_the_created_employee()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 162000000,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "a PUT call is made to update the employee",
-            "match": {
-              "location": "com.hrms.api.apiTestingFinalSteps.a_PUT_call_is_made_to_update_the_employee()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c201\u003e but was \u003c400\u003e.\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)\r\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)\r\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)\r\n\tat com.hrms.api.apiTestingFinalSteps.the_status_code_is(apiTestingFinalSteps.java:193)\r\n\tat ✽.the status code is 201(file:///C:/Users/FS/eclipse-workspace/CucumberFramework/src/test/resources/features/apiWorkflow.feature:26)\r\n",
-              "duration": 4000000,
-              "status": "failed"
-            },
-            "line": 26,
-            "name": "the status code is 201",
-            "match": {
-              "arguments": [
-                {
-                  "val": "201",
-                  "offset": 19
-                }
-              ],
-              "location": "com.hrms.api.apiTestingFinalSteps.the_status_code_is(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 27,
-            "name": "the updated employee contains key \"Message\" and value \"Entry updated\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Message\"",
-                  "offset": 34
-                },
-                {
-                  "val": "\"Entry updated\"",
-                  "offset": 54
-                }
-              ],
-              "location": "com.hrms.api.apiTestingFinalSteps.the_updated_employee_contains_key_and_value(java.lang.String,java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@apiWorkflow"
-          }
-        ]
-      },
-      {
-        "line": 6,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 339000000,
+              "duration": 738000000,
               "status": "passed"
             },
             "line": 7,
-            "name": "a JWT is generated",
+            "name": "enter valid credentials",
             "match": {
-              "location": "com.hrms.api.generateTokenSteps.a_JWT_is_generated()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-03-06T17:48:05.988Z",
-        "line": 29,
-        "name": "Retrieving the updated employee",
-        "description": "",
-        "id": "syntax-hrms-api-workflow;retrieving-the-updated-employee",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 3000000,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "a request is prepared to retrieve the updated employee",
-            "match": {
-              "location": "com.hrms.api.apiTestingFinalSteps.aRequestIsPreparedToRetrieveTheUpdatedEmployee()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 224000000,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "a GET call is made to retrieve the updated employee",
-            "match": {
-              "location": "com.hrms.api.apiTestingFinalSteps.aGETCallIsMadeToRetrieveTheUpdatedEmployee()"
+              "location": "com.hrms.stepDefinitions.LoginStepDefinition.enter_valid_credentials()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c200\u003e but was \u003c400\u003e.\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)\r\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)\r\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)\r\n\tat com.hrms.api.apiTestingFinalSteps.theStatusCodeForRetrievingTheUpdatedEmployeeIs(apiTestingFinalSteps.java:219)\r\n\tat ✽.the status code for retrieving the updated employee is 200(file:///C:/Users/FS/eclipse-workspace/CucumberFramework/src/test/resources/features/apiWorkflow.feature:32)\r\n",
-              "duration": 7000000,
-              "status": "failed"
-            },
-            "line": 32,
-            "name": "the status code for retrieving the updated employee is 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 55
-                }
-              ],
-              "location": "com.hrms.api.apiTestingFinalSteps.theStatusCodeForRetrievingTheUpdatedEmployeeIs(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 33,
-            "name": "the retrieved employee_middle_name \"employee[0].emp_middle_name\" matches the globally stored emp middle name",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"employee[0].emp_middle_name\"",
-                  "offset": 35
-                }
-              ],
-              "location": "com.hrms.api.apiTestingFinalSteps.theRetrievedEmployee_middle_nameMatchesTheGloballyStoredEmpMiddleName(java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@apiWorkflow"
-          }
-        ]
-      },
-      {
-        "line": 6,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 269000000,
+              "duration": 2726000000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "a JWT is generated",
+            "line": 8,
+            "name": "click on login button",
             "match": {
-              "location": "com.hrms.api.generateTokenSteps.a_JWT_is_generated()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-03-06T17:48:06.701Z",
-        "line": 35,
-        "name": "Partially updating the employee",
-        "description": "",
-        "id": "syntax-hrms-api-workflow;partially-updating-the-employee",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 35000000,
-              "status": "passed"
-            },
-            "line": 36,
-            "name": "a request is prepared to partially update the employee",
-            "match": {
-              "location": "com.hrms.api.apiTestingFinalSteps.a_request_is_prepared_to_partially_update_the_employee()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 175000000,
-              "status": "passed"
-            },
-            "line": 37,
-            "name": "a PATCH call is made to partially update the employee",
-            "match": {
-              "location": "com.hrms.api.apiTestingFinalSteps.a_PATCH_call_is_made_to_partially_update_the_employee()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c201\u003e but was \u003c400\u003e.\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)\r\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)\r\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)\r\n\tat com.hrms.api.apiTestingFinalSteps.the_status_code_is(apiTestingFinalSteps.java:193)\r\n\tat ✽.the status code is 201(file:///C:/Users/FS/eclipse-workspace/CucumberFramework/src/test/resources/features/apiWorkflow.feature:38)\r\n",
-              "duration": 4000000,
-              "status": "failed"
-            },
-            "line": 38,
-            "name": "the status code is 201",
-            "match": {
-              "arguments": [
-                {
-                  "val": "201",
-                  "offset": 19
-                }
-              ],
-              "location": "com.hrms.api.apiTestingFinalSteps.the_status_code_is(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 39,
-            "name": "the partially updated employee contains key \"Message\" and value \"Entry updated\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Message\"",
-                  "offset": 44
-                },
-                {
-                  "val": "\"Entry updated\"",
-                  "offset": 64
-                }
-              ],
-              "location": "com.hrms.api.apiTestingFinalSteps.thePartiallyUpdatedEmployeeContainsKeyAndValue(java.lang.String,java.lang.String)"
+              "location": "com.hrms.stepDefinitions.LoginStepDefinition.click_on_login_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 40,
-            "name": "the partially updated employee \"employee[0].emp_firstname\" matches globally stored first name",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"employee[0].emp_firstname\"",
-                  "offset": 31
-                }
-              ],
-              "location": "com.hrms.api.apiTestingFinalSteps.thePartiallyUpdatedEmployeeMatchesGloballyStoredFirstName(java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@apiWorkflow"
-          }
-        ]
-      },
-      {
-        "line": 6,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 236000000,
+              "duration": 167000000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "a JWT is generated",
+            "line": 9,
+            "name": "verify dashboard is displayed",
             "match": {
-              "location": "com.hrms.api.generateTokenSteps.a_JWT_is_generated()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-03-06T17:48:07.227Z",
-        "line": 42,
-        "name": "Delete the created employee",
-        "description": "",
-        "id": "syntax-hrms-api-workflow;delete-the-created-employee",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 4000000,
-              "status": "passed"
-            },
-            "line": 43,
-            "name": "a request is prepared to delete the employee",
-            "match": {
-              "location": "com.hrms.api.apiTestingFinalSteps.aRequestIsPreparedToDeleteTheEmployee()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 236000000,
-              "status": "passed"
-            },
-            "line": 44,
-            "name": "a DELETE call in made",
-            "match": {
-              "location": "com.hrms.api.apiTestingFinalSteps.aDELETECallInMade()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c201\u003e but was \u003c400\u003e.\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)\r\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)\r\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)\r\n\tat com.hrms.api.apiTestingFinalSteps.the_status_code_is(apiTestingFinalSteps.java:193)\r\n\tat ✽.the status code is 201(file:///C:/Users/FS/eclipse-workspace/CucumberFramework/src/test/resources/features/apiWorkflow.feature:45)\r\n",
-              "duration": 4000000,
-              "status": "failed"
-            },
-            "line": 45,
-            "name": "the status code is 201",
-            "match": {
-              "arguments": [
-                {
-                  "val": "201",
-                  "offset": 19
-                }
-              ],
-              "location": "com.hrms.api.apiTestingFinalSteps.the_status_code_is(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 46,
-            "name": "the employee is successfully deleted with the \"Message\" in response \"Entry deleted\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Message\"",
-                  "offset": 46
-                },
-                {
-                  "val": "\"Entry deleted\"",
-                  "offset": 68
-                }
-              ],
-              "location": "com.hrms.api.apiTestingFinalSteps.theEmployeeIsSuccessfullyDeletedWithTheInResponse(java.lang.String,java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 47,
-            "name": "the \"employee[0].employee_id\" is the same as the one stored in global",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"employee[0].employee_id\"",
-                  "offset": 4
-                }
-              ],
-              "location": "com.hrms.api.apiTestingFinalSteps.theIsTheSameAsTheOneStoredInGlobal(java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@apiWorkflow"
-          }
-        ]
-      },
-      {
-        "line": 6,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 161000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "a JWT is generated",
-            "match": {
-              "location": "com.hrms.api.generateTokenSteps.a_JWT_is_generated()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-03-06T17:48:07.744Z",
-        "line": 49,
-        "name": "Retrieve all employees",
-        "description": "",
-        "id": "syntax-hrms-api-workflow;retrieve-all-employees",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 3000000,
-              "status": "passed"
-            },
-            "line": 50,
-            "name": "a request is prepared to retrieve all employees",
-            "match": {
-              "location": "com.hrms.api.apiTestingFinalSteps.aRequestIsPreparedToRetrieveAllEmployees()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 250000000,
-              "status": "passed"
-            },
-            "line": 51,
-            "name": "a GET call is made to retrieve all employees",
-            "match": {
-              "location": "com.hrms.api.apiTestingFinalSteps.aGETCallIsMadeToRetrieveAllEmployees()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "passed"
-            },
-            "line": 52,
-            "name": "the status code is 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 19
-                }
-              ],
-              "location": "com.hrms.api.apiTestingFinalSteps.the_status_code_is(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2426000000,
-              "status": "passed"
-            },
-            "line": 53,
-            "name": "it contains key1 \"Total Employees\" and Key2 \"Employees\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Total Employees\"",
-                  "offset": 17
-                },
-                {
-                  "val": "\"Employees\"",
-                  "offset": 44
-                }
-              ],
-              "location": "com.hrms.api.apiTestingFinalSteps.it_contains_key1_and_Key2(java.lang.String,java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@apiWorkflow"
-          }
-        ]
-      },
-      {
-        "line": 6,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 159000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "a JWT is generated",
-            "match": {
-              "location": "com.hrms.api.generateTokenSteps.a_JWT_is_generated()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-03-06T17:48:10.615Z",
-        "line": 55,
-        "name": "Retrieve all employee status",
-        "description": "",
-        "id": "syntax-hrms-api-workflow;retrieve-all-employee-status",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 7000000,
-              "status": "passed"
-            },
-            "line": 56,
-            "name": "a request is prepared to get all employee status",
-            "match": {
-              "location": "com.hrms.api.apiTestingFinalSteps.a_request_is_prepared_to_get_all_employee_status()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 156000000,
-              "status": "passed"
-            },
-            "line": 57,
-            "name": "a GET call is made to retrieve the status of all employees",
-            "match": {
-              "location": "com.hrms.api.apiTestingFinalSteps.a_GET_call_is_made_to_retrieve_the_status_of_all_employees()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3000000,
-              "status": "passed"
-            },
-            "line": 58,
-            "name": "it contains the value1 \"Employee\" and value2 \"Worker\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Employee\"",
-                  "offset": 23
-                },
-                {
-                  "val": "\"Worker\"",
-                  "offset": 45
-                }
-              ],
-              "location": "com.hrms.api.apiTestingFinalSteps.it_contains_the_value1_and_value2(java.lang.String,java.lang.String)"
+              "location": "com.hrms.stepDefinitions.LoginStepDefinition.verify_dashboard_is_displayed()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@apiWorkflow"
+            "name": "@featureTag"
+          },
+          {
+            "name": "@login"
+          },
+          {
+            "name": "#feature"
+          },
+          {
+            "name": "level"
+          },
+          {
+            "name": "tag"
+          },
+          {
+            "name": "@validCreds"
+          },
+          {
+            "name": "#scenario"
+          },
+          {
+            "name": "level"
+          },
+          {
+            "name": "tag"
           }
         ]
       }
     ],
-    "name": "Syntax HRMS API Workflow",
-    "description": "  Description: This feature file tests Syntax HRMS API Workflow",
-    "id": "syntax-hrms-api-workflow",
+    "name": "Login Functionality",
+    "description": "",
+    "id": "login-functionality",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/apiWorkflow.feature",
+    "uri": "file:src/test/resources/features/login.feature",
     "tags": [
       {
-        "name": "@apiWorkflow",
+        "name": "@featureTag",
         "type": "Tag",
         "location": {
-          "line": 2,
+          "line": 1,
           "column": 1
+        }
+      },
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 13
+        }
+      },
+      {
+        "name": "#feature",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 20
+        }
+      },
+      {
+        "name": "level",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 29
+        }
+      },
+      {
+        "name": "tag",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 35
         }
       }
     ]

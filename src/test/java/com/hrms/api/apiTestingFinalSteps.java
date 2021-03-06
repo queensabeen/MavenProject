@@ -4,8 +4,6 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import com.hrms.testbase.PageInitializer;
-import com.hrms.utils.CommonMethods;
 import com.hrms.utils.apiConstants;
 import com.hrms.utils.apiPayLoadConstants;
 import io.cucumber.java.en.And;
@@ -27,7 +25,7 @@ import static io.restassured.RestAssured.*;
 import static org.hamcrest.CoreMatchers.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class apiTestingFinalSteps extends PageInitializer {
+public class apiTestingFinalSteps {
 
     RequestSpecification request;
     Response response;
@@ -69,7 +67,7 @@ public class apiTestingFinalSteps extends PageInitializer {
             e.printStackTrace();
 
 
-    }
+        }
     }
 
     @When("a POST call is made to create an employee")
@@ -319,13 +317,7 @@ public class apiTestingFinalSteps extends PageInitializer {
 //        }
 
         String response_string = response.asString();
-        JsonObject response_getAllEmployees = JsonParser.parseString(response_string).getAsJsonObject();
-        JsonArray array_allEmployees = response_getAllEmployees.get("Employees").getAsJsonArray();
-        for(int i=0; i<100; i++) {
-            JsonObject Employee_0_info = array_allEmployees.get(0).getAsJsonObject();
-            String employee_ID_x = Employee_0_info.get("employee_id").getAsString();
-            System.out.println(employee_ID_x);
-        }
+        JsonObject response_getallEmployees = JsonParser.parseString(response_string).getAsJsonObject();
     }
     //====================retrieving all employees status==============================
 
