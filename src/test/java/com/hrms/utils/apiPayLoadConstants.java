@@ -24,11 +24,11 @@ public class apiPayLoadConstants {
 //        return obj.toString();
 
         File input = new File("C:/Users/FS/eclipse-workspace/CucumberFramework/src/test/resources/JsonData/createUser.json");
-        JsonObject CreateUserData = null;
+    JsonObject CreateUserData=null;
         try {
             //parsing the input file
             JsonElement fileElement = JsonParser.parseReader(new FileReader(input));
-            CreateUserData = fileElement.getAsJsonObject();
+           CreateUserData = fileElement.getAsJsonObject();
 
 
 //            JsonElement employee_birthday = CreateUserData.get("emp_birthday");

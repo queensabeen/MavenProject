@@ -1,57 +1,16 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/dashboard.feature");
 formatter.feature({
-  "name": "Login Functionality",
+  "name": "Dashboard Tab Functionality",
   "description": "",
-  "keyword": "Feature",
-  "tags": [
-    {
-      "name": "@featureTag"
-    },
-    {
-      "name": "@login"
-    },
-    {
-      "name": "#feature"
-    },
-    {
-      "name": "level"
-    },
-    {
-      "name": "tag"
-    }
-  ]
+  "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "Login with valid credentials",
+  "name": "Dashboard Tab Verification",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@featureTag"
-    },
-    {
-      "name": "@login"
-    },
-    {
-      "name": "#feature"
-    },
-    {
-      "name": "level"
-    },
-    {
-      "name": "tag"
-    },
-    {
-      "name": "@validCreds"
-    },
-    {
-      "name": "#scenario"
-    },
-    {
-      "name": "level"
-    },
-    {
-      "name": "tag"
+      "name": "@dashboardTabs"
     }
   ]
 });
@@ -88,7 +47,20 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.embedding("image/png", "embedded0.png", "Login with valid credentials");
+formatter.step({
+  "name": "verify the following tabs on dashboard",
+  "rows": [
+    {}
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.hrms.stepDefinitions.DashboardStepDefinition.verify_the_following_tabs_on_dashboard(io.cucumber.datatable.DataTable)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.embedding("image/png", "embedded0.png", "Dashboard Tab Verification");
 formatter.after({
   "status": "passed"
 });
