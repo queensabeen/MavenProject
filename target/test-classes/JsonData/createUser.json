@@ -1,0 +1,15 @@
+{
+  "Message": "Entry Created",
+  "Employee": [
+    {
+      "employee_id": "16083A",
+      "emp_firstname": "sabeen",
+      "emp_middle_name": "none",
+      "emp_lastname": "sadi",
+      "emp_birthday": "1989-02-17",
+      "emp_gender": "Female",
+      "emp_job_title": "Developer",
+      "emp_status": "Freelance"
+    }
+  ]
+}

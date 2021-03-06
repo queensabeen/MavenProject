@@ -1,0 +1,10 @@
+Runner Class:
+--will help us to execute our cucumber tests by using JUnit
+
+Hooks:
+--annotation based library which gives us an opportunity to start a test and end the test
+--hooks will be applied to all the tests by default
+
+@After annotation will be executed no matter what the test result
+-Even if your test fails in the middle of the execution, your @after hook will still get executed
+

@@ -1,0 +1,31 @@
+If we do not have post man or any other software tool, how can we test our apis?
+
+We know Java:
+1. we need API documentation (details how the API can be used)
+2. send HTTP request to the server -- using java
+3. get the response from the server and using java parse that response and write test cases
+
+we know java and want to send request to our server:
+1. our server accepts HTTP request
+HTTP is a protocol
+    1. Write HTTP protocol in java and send our request to the server
+    2.
+
+    HTTPclient();
+    Restassured();
+
+Restassured()-->
+developed to test the restful web services
+Restassured follows the BDD approach
+1. Given() - to prepare the request
+2. When() - what type of call you are making
+3. Then() - to verify
+
+1. create an Employee;
+a. URI --> BaseURI == RestAssured.baseURI = "http://3.237.189.167/syntaxapi/api";
+b. Given() --> header(Authorization, Content-Type, body) -> return type -> object() -> request specification
+c. When() --> call type(post(/createEmployee.php)); -> return type-> response
+we have the response of our HTTP request
+d.Then() --> to write our test cases
+
+Dependencies:

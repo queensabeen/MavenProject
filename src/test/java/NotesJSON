@@ -1,0 +1,32 @@
+1. Serialization and Deserialization
+--Serialization of json is conversion of one json object into .NET object
+--Deserialization is converting the .NET object into a json object
+
+Gson is by google and widely used for serialization and deserialization of Json
+
+JSON object
+{
+"key" : "value"
+"key" : "value"
+}
+
+JSON element
+"key" : "value"
+
+JSON Array
+"key":[{
+        "key" : "value",
+        "key" : "value",
+        "key" : "value"
+        },
+        {
+        "key" : "value",
+        "key" : "value",
+        "key" : "value"
+        },
+        {"key" : "value",
+         "key" : "value",
+         "key" : "value"
+         }]
+
+Whenever we access value of a key, it returns JSON element

@@ -1,0 +1,22 @@
+What is RestAssured?
+--A java library we use to test APIs
+
+What is BDD?
+--a branch of Test Driven Development.
+--uses human readable description of software user requirements
+
+Scenario:
+creating an employee
+Given a request is prepared to create an employee.
+When a post call is made to create that employee.
+Then the status code for creating an employee is 201
+AND the employee is created
+
+Given() you pass the request headers, query and path parameters, body, cookies
+When() marks the premise of your scenario, eg/ When you get/post/put
+Then() your assert and matcher condition are written here
+
+Hamcrest library is what we use to perform assertions
+equalTo
+allOf
+anyOfHasToString

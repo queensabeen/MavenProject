@@ -1,0 +1,47 @@
+Imperative vs Declarative scenarios
+
+What is acceptance criteria?
+-- set of conditions and rules that a software product must meet to be accepted by the customer
+-- the way we write cucumber scenarios is that they should meet the acceptance criteria
+
+
+Step1:
+create a feature file --> we will write the scenarios
+
+Step2:
+Create a runner class --> will be used to execute our code
+
+Step3:
+Create apiTestingFinalStep class --> implementation of test cases
+
+Step4:
+Create generateTokenSteps class --> to generate the token
+
+Step5:
+Make changes in the runners
+
+Step6:
+Write down steps in feature file
+
+Step7:
+Run the runners and copy the step implementation and paste them in the respective class
+
+Step8:
+Generate a token
+Set the Base URI
+    1. Given()--> headers and body
+    2. When()--> POST
+
+Step9:
+Implementation of generateTokenSteps
+
+Step10:
+Implementation of apiTestingFinalSteps
+
+Step11:
+Create a class API constants and store the URI along with the base URI
+
+Step12:
+Replace the hardcode with the constants in your methods
+
+JSON Object is a class in which we have a method

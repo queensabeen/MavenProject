@@ -1,0 +1,69 @@
+Cucumber:
+--automation tool which supports BDD (behavioural driven development
+
+--BDD is an agile software development process that creates a collab between QA, developers and any other
+   non technical team members
+
+--Uses a lang called gherkin which makes our test cases look plain in english
+
+--Gherkin keywords:
+    -Given: pre condition
+    -When: action
+    -Then: result/outcome
+    -And: continuation of the steps above (given, when, then)
+
+As a user, I must be able to login to HRMS application with valid given credentials
+
+-Given navigate to HRMS login page
+-When enter valid credentials
+-And click on login button
+-Then verify dashboard logo is displayed
+-And verify username is correct
+
+BaseClass -> starting point
+PageInitializer -> initialize our objects
+CommonMethods -p> common functions
+
+In order to write a test case in Cucumber, you will need a feature file
+
+Execute our test -- setup -- launch the browser -- navigate to url
+Performing any action --
+
+To have a feature file, you have to create a file with an extension.feature
+
+features folder
+    feature file
+        scenarios
+            steps:
+             given
+             when
+             then
+             and
+
+Benefits of Cucumber:
+-- used gherkin language and plain english
+-- free, open source tool
+-- compatible to use with different programming languages such as Java, Ruby, .NET, python
+-- compatible to use with different automation tools such as selenium, JUnit, Serenity, etc...
+
+Who can use gherkin language:
+-QA
+-BA
+
+In user story(ticket), each and every requirement is called AC (Acceptance Criteria)
+
+User Story:
+    -Search by ID
+        Given user shall navigate to HRMS
+        When user is able to login with valid credentials
+        Then user shall see dashboard displayed
+        And user shall navigate to Employee List
+        When user shall search an employee by ID
+        Then user shall see the employee information displayed on the table
+
+
+    -Search by Name
+
+
+
+
