@@ -4,6 +4,7 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import com.hrms.utils.CommonMethods;
 import com.hrms.utils.apiConstants;
 import com.hrms.utils.apiPayLoadConstants;
 import io.cucumber.java.en.And;
@@ -25,7 +26,7 @@ import static io.restassured.RestAssured.*;
 import static org.hamcrest.CoreMatchers.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class apiTestingFinalSteps {
+public class apiTestingFinalSteps extends CommonMethods {
 
     RequestSpecification request;
     Response response;
