@@ -14,16 +14,21 @@ public class ConfigsReader {
     @return Properties*/
 
     public static Properties readProperties(String filePath) {
-
+        FileInputStream fileInputStream=null;
         try {
-            FileInputStream fileInputStream = new FileInputStream(filePath);
+            fileInputStream = new FileInputStream(filePath);
             prop= new Properties();
             prop.load(fileInputStream);
-            fileInputStream.close();
-        }catch(FileNotFoundException e){
+        }catch(IOException e){
             e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
+        } finally {
+            try {
+                if (fileInputStream != null) {
+                    fileInputStream.close();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
         return prop;
     }
