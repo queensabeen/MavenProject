@@ -18,7 +18,7 @@ public class BaseClass {
     this method will open a browser, set up configuration and bavigate to the URL
      */
 
-    public static void setUp()  {
+    public static WebDriver setUp() {
 
         ConfigsReader.readProperties(Constants.CONFIGURATION_FILEPATH);
         switch (ConfigsReader.getPropertyValue("browser").toLowerCase()) {
@@ -39,7 +39,9 @@ public class BaseClass {
         //driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Constants.IMPLICIT_WAIT, TimeUnit.SECONDS);
         PageInitializer.initializePageObjects();
+        return driver;
     }
+
 
     /*
     this method will close any open browser
