@@ -15,6 +15,6 @@ import org.junit.runner.RunWith;
                             "rerun:target/FailedTests.txt", //generates txt file with failed tests only
                             "json:target/cucumber.json" //generates json report -> stores information
                                 }
-                        )
+                        )//test for jenkins
 public class TestRunner {
 }
