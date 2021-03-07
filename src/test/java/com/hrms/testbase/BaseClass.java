@@ -35,9 +35,8 @@ public class BaseClass {
             default:
                 throw new RuntimeException("Browser is invalid");
         }
-        driver.get(ConfigsReader.getPropertyValue("url"));
-        //driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Constants.IMPLICIT_WAIT, TimeUnit.SECONDS);
+        driver.navigate().to(ConfigsReader.getPropertyValue("url"));
+        driver.manage().timeouts().implicitlyWait(Constants.WAIT, TimeUnit.SECONDS);
         PageInitializer.initializePageObjects();
         return driver;
     }

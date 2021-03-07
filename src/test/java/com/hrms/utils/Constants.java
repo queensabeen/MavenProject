@@ -12,4 +12,7 @@ public class Constants {
 
     public static final int EXPLICIT_WAIT=20;
 
+    public static final int WAIT = 20;
+
+
 }
