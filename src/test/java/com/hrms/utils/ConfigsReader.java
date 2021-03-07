@@ -6,29 +6,23 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class ConfigsReader {
-    public static Properties prop;
+    static Properties prop;
 
     /*this method read any given property file
-
             @param filePath
     @return Properties*/
 
     public static Properties readProperties(String filePath) {
-        FileInputStream fileInputStream=null;
+
         try {
-            fileInputStream = new FileInputStream(filePath);
+            FileInputStream fileInputStream = new FileInputStream(filePath);
             prop= new Properties();
             prop.load(fileInputStream);
-        }catch(IOException e){
+            fileInputStream.close();
+        }catch(FileNotFoundException e){
             e.printStackTrace();
-        } finally {
-            try {
-                if (fileInputStream != null) {
-                    fileInputStream.close();
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
         return prop;
     }

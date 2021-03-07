@@ -18,7 +18,7 @@ public class BaseClass {
     this method will open a browser, set up configuration and bavigate to the URL
      */
 
-    public static WebDriver setUp() {
+    public static void setUp()  {
 
         ConfigsReader.readProperties(Constants.CONFIGURATION_FILEPATH);
         switch (ConfigsReader.getPropertyValue("browser").toLowerCase()) {
@@ -35,12 +35,11 @@ public class BaseClass {
             default:
                 throw new RuntimeException("Browser is invalid");
         }
-        driver.navigate().to(ConfigsReader.getPropertyValue("url"));
-        driver.manage().timeouts().implicitlyWait(Constants.WAIT, TimeUnit.SECONDS);
+        driver.get(ConfigsReader.getPropertyValue("url"));
+        //driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Constants.IMPLICIT_WAIT, TimeUnit.SECONDS);
         PageInitializer.initializePageObjects();
-        return driver;
     }
-
 
     /*
     this method will close any open browser
