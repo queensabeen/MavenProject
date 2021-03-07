@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class ConfigsReader {
-    static Properties prop;
+    public static Properties prop;
 
     /*this method read any given property file
 
